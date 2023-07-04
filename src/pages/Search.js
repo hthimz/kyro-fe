@@ -16,7 +16,7 @@ const SearchPage = () => {
     if (rollNumber) {
       try {
         const response = await fetch(
-          `http://54.158.238.49/students/${rollNumber}`
+          `http://3.234.67.196:8000/students/${rollNumber}`
         );
         if (response.ok) {
           const data = await response.json();
