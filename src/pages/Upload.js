@@ -19,7 +19,7 @@ const UploadPage = () => {
       formData.append("image", file);
 
       try {
-        const response = await fetch("http://localhost:8000/upload", {
+        const response = await fetch("http://54.158.238.49/upload", {
           method: "POST",
           body: formData,
           redirect: "follow",

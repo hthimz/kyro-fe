@@ -15,7 +15,9 @@ const SearchPage = () => {
   const handleSearch = async () => {
     if (rollNumber) {
       try {
-        const response = await fetch(`/students/${rollNumber}`);
+        const response = await fetch(
+          `http://54.158.238.49/students/${rollNumber}`
+        );
         if (response.ok) {
           const data = await response.json();
           setResult(data);
