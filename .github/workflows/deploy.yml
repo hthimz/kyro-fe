@@ -48,8 +48,8 @@ jobs:
                git pull origin main
                npm install
                npm run build
-               cd ..
-               sudo cp kyro-fe/build/* /usr/share/nginx/frontend/
+               cd 
+               cp kyro-fe/dist/* /usr/share/nginx/frontend/
                
             
 
