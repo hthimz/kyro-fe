@@ -46,7 +46,7 @@ const SearchPage = () => {
       <Card>
         <Card.Body>
           <Text h3 align="center">
-            Search Marksheet by Roll Number
+            Search Marksheet using Roll Number
           </Text>
           <div style={{ marginTop: "1rem", marginBottom: "1rem" }}>
             <Input
