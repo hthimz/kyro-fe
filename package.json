@@ -2,7 +2,6 @@
   "name": "kyro-fe",
   "version": "1.0.0",
   "description": "React Front End repo for marksheet management",
-  "main": "index.js",
   "scripts": {
     "start": "npx parcel index.html",
     "predeploy": "npm run build",
