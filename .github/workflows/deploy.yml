@@ -49,7 +49,7 @@ jobs:
                npm install
                npm run build
                cd ..
-               sudo cp build/* /usr/share/nginx/frontend/
+               sudo cp kyro-fe/build/* /usr/share/nginx/frontend/
                
             
 
