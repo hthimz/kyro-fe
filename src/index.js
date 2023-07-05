@@ -1,8 +1,9 @@
-import HomePage from "./pages/Home";
-import UploadPage from "./pages/Upload";
-import SearchPage from "./pages/Search";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home/Home";
+import UploadPage from "./pages/Upload/Upload";
+import SearchPage from "./pages/Search/Search";
+import { Routes, Route } from "react-router-dom";
 
+//available routes for our app
 const FunctionalApp = () => {
   return (
     <Routes>

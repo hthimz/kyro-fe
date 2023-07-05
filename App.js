@@ -11,10 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const theme = createTheme(THEME_DARK_CONTEXT);
 root.render(
   <Router>
+    {/* Applying the dark theme  */}
     <NextUIProvider theme={theme}>
       <FunctionalApp />
     </NextUIProvider>
   </Router>
 );
-
-// this is also known as composition of components

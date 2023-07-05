@@ -1,7 +1,8 @@
 import React from "react";
-import { Text, Heading, Button, Row, Spacer } from "@nextui-org/react";
+import { Text, Button, Row, Spacer } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import { Layout } from "../common/Layout";
+import { Layout } from "../../common/Layout";
+import { constants } from "../../utils/constants";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           }}
           weight="bold"
         >
-          Marksheet Management
+          {constants.TITLE}
         </Text>
       </Row>
       <Row justify="center" align="center">
@@ -27,7 +28,7 @@ const Home = () => {
           }}
           weight="bold"
         >
-          Kyro
+          {constants.BRAND_NAME}
         </Text>
       </Row>
       <Spacer y={8} />
@@ -37,7 +38,7 @@ const Home = () => {
             to="/upload"
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            Register Marksheet
+            {constants.REGISTER_MARKSHEET}
           </Link>
         </Button>
         <Button auto color="gradient" bordered>
@@ -45,45 +46,14 @@ const Home = () => {
             to="/search"
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            Retrieve Marksheet
+            {constants.RETRIEVE_MARKSHEET}
           </Link>
         </Button>
       </Row>
       <Spacer y={4} />
-      <Row justify="center">
-        <Text blockquote>
-          <p>
-            To use the application, click on the "Upload Marksheet" button to
-            upload your marksheet and save it to the database. <br />
-            Alternatively, click on the "Search Marksheet" button to search for
-            a marksheet using the roll number.
-          </p>
-        </Text>
-      </Row>
+      <Row justify="center">{constants.SHORT_HOW_TO()}</Row>
     </Layout>
   );
 };
 
 export default Home;
-
-{
-  /* <Box padding="2rem">
-      <Heading as="h1" fontSize="2rem" marginBottom="2rem">
-        Marksheet Management System
-      </Heading>
-      <Box marginBottom="1rem">
-        <Link to="/upload">
-          <Button color="primary" shadow>
-            Go to Upload Page
-          </Button>
-        </Link>
-      </Box>
-      <Box>
-        <Link to="/search">
-          <Button color="secondary" shadow>
-            Go to Search Page
-          </Button>
-        </Link>
-      </Box>
-</Box> */
-}
