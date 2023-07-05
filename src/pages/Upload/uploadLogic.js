@@ -33,7 +33,8 @@ const UploadLogic = () => {
           setLoading(false);
           setError(null);
         } else {
-          setError("Failed to process the marksheet");
+          const data = await response.json();
+          setError(data?.error || "Failed to process the marksheet");
           setLoading(false);
         }
       } catch (error) {
